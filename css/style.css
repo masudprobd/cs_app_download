@@ -1,0 +1,307 @@
+/* =========================
+   Keyframe Animations
+========================= */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+@keyframes shine {
+  0% { left: -100%; }
+  100% { left: 120%; }
+}
+
+
+/* =========================
+   Button Container
+========================= */
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   Download Button (Animated)
+========================= */
+.download-button {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #16610E, #16610E);
+  color: #fff !important;
+  padding: 10px 24px;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  animation: pulse 2.5s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  text-decoration: none !important;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.download-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-20deg);
+  animation: shine 2.8s linear infinite;
+}
+
+.download-button:hover {
+  transform: scale(1.06);
+  background: #02c17b;
+}
+
+/* =========================
+   Share Button
+========================= */
+.share-button {
+  display: inline-block;
+  background-color: #ff7700;
+  color: #ffffff !important;
+  padding: 10px 25px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.share-button:hover {
+  background-color: #0069d9;
+}
+
+/* =========================
+   App Card
+========================= */
+.app-card {
+  max-width: 100%;
+  margin: 20px 10px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  border: 1px solid #e3e3e3;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.app-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+  margin-right: 20px;
+}
+
+.app-info {
+  flex: 1;
+}
+
+.app-info h2 {
+  font-size: 24px;
+  margin: 0 0 8px;
+  color: #000;
+}
+
+.stars {
+  color: #000;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.download-count {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   Share Popup
+========================= */
+.share-popup {
+  display: none;
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 999;
+  width: 280px;
+  text-align: center;
+}
+
+.share-popup .close-btn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: #555;
+  cursor: pointer;
+}
+
+.share-popup a,
+.share-popup button {
+  display: block;
+  margin: 8px 0;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.share-popup a.facebook  { background: #3b5998; }
+.share-popup a.messenger { background: #0084FF; }
+.share-popup a.whatsapp  { background: #25D366; }
+.share-popup button.copy-link { background: #6c757d; }
+
+/* =========================
+   Installation Guide
+========================= */
+.christosangeet-guide {
+  display: none;
+  background: linear-gradient(135deg, #39029c, #ff6b81);
+  color: #fff;
+  padding: 30px 20px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 1100px;
+  margin: 40px auto;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.christosangeet-guide h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.christosangeet-guide h3 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.step {
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 16px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.step-number {
+  background: #ff5d5d;
+  color: #fff;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  line-height: 30px;
+}
+
+.file-box {
+  background: #f2f2f2;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.open-btn {
+  background: #ff6b81;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.step img {
+  margin-top: auto;
+  max-width: 100%;
+}
+
+.step .large-img {
+  width: 300px;
+}
+
+.app-logo img {
+  margin-top: 10px;
+  width: 60px;
+  border-radius: 12px;
+}
+
+.download-fail {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.download-fail a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 768px) {
+  .step {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .app-card img {
+    margin: 0 auto 15px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .download-button,
+  .share-button {
+    margin: 0;
+  }
+
+  .share-popup {
+    top: 150px;
+    width: 90%;
+  }
+}

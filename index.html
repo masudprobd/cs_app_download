@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+<center><h3 style="color: #ff7700;">আজই অ্যাপ ডাউনলোড করুন</h3></center>
+<!-- App Card -->
+<div class="app-card">
+  <img src="img/app_logo.png" alt="App Icon">
+  <div class="app-info">
+    <h2>Christo Sangeet</h2>
+    <div class="stars">★★★★★</div>
+    <div class="download-count">[total_view_counter]
+      <p class="versionInfo"> Version: Loading...</p>
+    </div>
+
+    <!-- App Download Link -->
+    <div class="buttons">
+      <a class="download-button downloadBtn" href="#" onclick="showGuide()">
+        <i class="fa fa-download"></i> Download  </a>
+
+      <button class="share-button" onclick="toggleShare()">
+        <i class="fa fa-share-alt"></i> Share   </button>
+    </div>
+
+    <!-- Share Popup -->
+    <div class="share-popup" id="sharePopup">
+      <button class="close-btn" onclick="toggleShare()">×</button>
+      <br /><br />
+      <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://christosangeet.com/download/" target="_blank">Share on Facebook</a>
+      <a class="messenger" href="fb-messenger://share?link=https://christosangeet.com/download/" target="_blank">Share on Messenger</a>
+      <a class="whatsapp" href="https://api.whatsapp.com/send?text=Download%20Christo%20Sangeet%20App:%20https://christosangeet.com/download/" target="_blank">Share on WhatsApp</a>
+      <button class="copy-link" onclick="copyLink()">Copy Link</button>
+    </div>
+  </div>
+</div>
+
+<!-- Installation Guide -->
+<div class="christosangeet-guide" id="installGuide">
+  <h3>How to install - (কিভাবে ইনস্টল করবেন)</h3>
+  <div class="steps">
+    <div class="step">
+      <div class="step-number">1</div>
+      <p><strong>Download and open the installation file</strong></p>
+      <div class="file-box">
+        ✔ File Downloaded
+        <button class="open-btn">Open</button>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-number">2</div>
+      <p><strong>Grant permission to install apps</strong></p>
+      <img src="https://christosangeetpro.github.io/Mobile-Screenshot/install/smartphone.svg" alt="Smartphone Image" class="large-img">
+    </div>
+    <div class="step">
+      <div class="step-number">3</div>
+      <p><strong>Complete the installation and open christosangeet</strong></p>
+      <small>You’ll find christosangeet right away!</small>
+      <div class="app-logo">
+        <img src="https://christosangeetpro.github.io/Mobile-Screenshot/install/app-logo.png" alt="christosangeet Logo">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/js.js"></script>
