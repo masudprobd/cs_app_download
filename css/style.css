@@ -115,7 +115,7 @@
 }
 
 .stars {
-  color: #000;
+  color: #ff3d4d;
   font-size: 18px;
   margin: 5px 0;
 }
@@ -304,4 +304,5 @@
     top: 150px;
     width: 90%;
   }
+
 }
