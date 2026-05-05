@@ -29,7 +29,7 @@ fetch("https://christosangeet.com/downloads/latest.json?t=" + new Date().getTime
     // Show version
     if (version) {
       document.querySelectorAll(".versionInfo").forEach(el => {
-        el.innerText = "Version: " + version;
+        el.innerText = "" + version;
       });
     }
   })
