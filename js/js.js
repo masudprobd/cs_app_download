@@ -1,3 +1,11 @@
+// opyWebsiteLink
+function copyWebsiteLink() {
+    navigator.clipboard.writeText("https://christosangeet.com/");
+    alert("লিংক কপি হয়েছে!");
+// opyWebsiteLink
+
+
+
 function toggleShare() {
   const popup = document.getElementById("sharePopup");
   popup.style.display = popup.style.display === "block" ? "none" : "block";
