@@ -60,25 +60,7 @@
   background: #02c17b;
 }
 
-/* =========================
-   Share Button
-========================= */
-.share-button {
-  display: inline-block;
-  background-color: #ff7700;
-  color: #ffffff !important;
-  padding: 10px 25px;
-  border-radius: 8px;
-  text-decoration: none !important;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s;
-}
 
-.share-button:hover {
-  background-color: #0069d9;
-}
 
 /* =========================
    App Card
@@ -126,53 +108,6 @@
   margin-bottom: 10px;
 }
 
-/* =========================
-   Share Popup
-========================= */
-.share-popup {
-  display: none;
-  position: absolute;
-  top: 130px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #ffffff;
-  border: 1px solid #ccc;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  z-index: 999;
-  width: 280px;
-  text-align: center;
-}
-
-.share-popup .close-btn {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  background: transparent;
-  border: none;
-  font-size: 20px;
-  color: #555;
-  cursor: pointer;
-}
-
-.share-popup a,
-.share-popup button {
-  display: block;
-  margin: 8px 0;
-  padding: 8px;
-  border: none;
-  border-radius: 6px;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.share-popup a.facebook  { background: #3b5998; }
-.share-popup a.messenger { background: #0084FF; }
-.share-popup a.whatsapp  { background: #25D366; }
-.share-popup button.copy-link { background: #6c757d; }
 
 /* =========================
    Installation Guide
@@ -295,14 +230,303 @@
     gap: 10px;
   }
 
-  .download-button,
-  .share-button {
+  .download-button {
     margin: 0;
   }
 
-  .share-popup {
-    top: 150px;
-    width: 90%;
-  }
 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* masudprobd------------------------- */
+
+
+
+
+/* =========================
+   ROOT
+========================= */
+
+.masudprobd-app{
+    font-family:'Hind Siliguri',sans-serif;
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+    -webkit-font-smoothing:antialiased;
+}
+
+/* =========================
+   WRAPPER
+========================= */
+
+.masudprobd-app .wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px 15px;
+    position:relative;
+    z-index:2;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.masudprobd-app .card{
+    width:100%;
+    max-width:430px;
+    padding:35px 28px;
+    border-radius:30px;
+    text-align:center;
+    background:#e0e5ec;
+    border:1px solid rgba(255,255,255,0.12);
+    backdrop-filter:blur(18px);
+box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 10px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+}
+
+/* =========================
+   ICON
+========================= */
+
+.masudprobd-app .app-icon-wrap{
+    width:130px;
+    height:130px;
+    margin:auto;
+    position:relative;
+}
+
+.masudprobd-app .app-icon-wrap::before{
+    content:"";
+    position:absolute;
+    inset:-6px;
+    border-radius:35px;
+    background:linear-gradient(45deg,#60a5fa,#9333ea,#facc15);
+    z-index:-1;
+    animation:rotate 20s linear infinite;
+}
+
+@keyframes rotate{
+    100%{transform:rotate(360deg);}
+}
+
+.masudprobd-app .app-icon{
+    width:100%;
+    height:100%;
+    border-radius:30px;
+    object-fit:cover;
+    background:#fff;
+    padding:4px;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.masudprobd-app .badge{
+    margin-top:20px;
+    display:inline-block;
+    padding:7px 18px;
+    border-radius:100px;
+   box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+    font-size:20px;
+    color:#000;
+}
+
+.masudprobd-app h1{
+    margin-top:15px;
+    font-size:clamp(22px,5vw,38px);
+    color:#000;
+}
+
+.masudprobd-app .desc{
+    margin-top:1px;
+    font-size:18px;
+    line-height:1.8;
+    color:#000;
+}
+
+/* =========================
+   🔥 STATS (CENTER FIXED)
+========================= */
+
+.masudprobd-app .stats{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:16px;
+    margin-top:22px;
+}
+
+.masudprobd-app .stat-box{
+   box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+    border-radius:14px;
+    padding:12px 6px;
+
+    /* ✅ CENTER FIX */
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    min-height:100px;
+}
+
+.masudprobd-app .stat-box h3{
+    font-size:16px;
+    margin:0;
+    color:#FF7700;
+    line-height:1.2;
+}
+
+.masudprobd-app .stat-box p{
+    font-size:15px;
+    color:#555;
+    margin:0;
+    line-height:1.2;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.masudprobd-app .downloadBtn{
+    display:block;
+    width:100%;
+    padding:16px;
+    border-radius:100px;
+    text-align:center;
+    font-size:16px;
+    font-weight:700;
+    color:#fff;
+    text-decoration:none;
+    background:linear-gradient(45deg,#2563eb,#7c3aed);
+}
+
+/* =========================
+   MOBILE OPTIMIZATION
+========================= */
+
+@media(max-width:480px){
+
+    .masudprobd-app .card{
+        padding:25px 18px;
+        border-radius:22px;
+    }
+
+    .masudprobd-app .app-icon-wrap{
+        width:110px;
+        height:110px;
+    }
+
+    .masudprobd-app h1{
+        font-size:20px;
+    }
+
+    .masudprobd-app .desc{
+        font-size:15px;
+        line-height:1.6;
+    }
+
+    .masudprobd-app .badge{
+        font-size:18px;
+        padding:6px 14px;
+    }
+
+    /* still 3 columns */
+    .masudprobd-app .stats{
+        grid-template-columns:repeat(3,minmax(0,1fr));
+        gap:16px;
+    }
+
+    .masudprobd-app .stat-box{
+        padding:10px 4px;
+        min-height:60px;
+    }
+
+    .masudprobd-app .stat-box h3{
+        font-size:14px;
+    }
+
+    .masudprobd-app .stat-box p{
+        font-size:12px;
+    }
+
+}
+
+/* very small phones */
+@media(max-width:360px){
+    .masudprobd-app .stats{
+        gap:5px;
+    }
+}
+
+
+
+
+/* share--------------------------- */
+.share-buttons{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    flex-wrap:wrap;
+    margin-top:10px;
+}
+
+.share-buttons a{
+    width:30px;
+    height:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+    text-decoration:none;
+    color:#fff;
+    font-size:15px;
+    transition:.3s ease;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.share-buttons a:hover{
+    transform:translateY(-4px) scale(1.05);
+}
+
+/* Facebook */
+.share-facebook{
+    background:#1877f2;
+}
+
+/* Twitter/X */
+.share-twitter{
+    background:#000;
+}
+
+/* WhatsApp */
+.share-whatsapp{
+    background:#25d366;
+}
+
+/* Copy Link */
+.share-copy{
+    background:#ff9800;
+}
+
+/* Mobile Responsive */
+@media(max-width:600px){
+    .share-buttons a{
+        width:30px;
+        height:30px;
+        font-size:15px;
+    }
 }
