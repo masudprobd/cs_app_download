@@ -1,11 +1,3 @@
-// opyWebsiteLink
-function copyWebsiteLink() {
-    navigator.clipboard.writeText("https://christosangeet.com/");
-    alert("লিংক কপি হয়েছে!");
-// opyWebsiteLink
-
-
-
 function toggleShare() {
   const popup = document.getElementById("sharePopup");
   popup.style.display = popup.style.display === "block" ? "none" : "block";
@@ -45,3 +37,11 @@ fetch("https://christosangeet.com/downloads/latest.json?t=" + new Date().getTime
     console.error("Download info load failed", error);
     alert("ডাউনলোড লিংক লোড করতে সমস্যা হয়েছে।");
   });
+
+
+
+// opyWebsiteLink
+function copyWebsiteLink() {
+    navigator.clipboard.writeText("https://christosangeet.com/");
+    alert("লিংক কপি হয়েছে!");
+// opyWebsiteLink
